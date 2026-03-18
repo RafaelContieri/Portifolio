@@ -48,6 +48,30 @@
     margin-bottom: 50px;
 }
 
+/* Estilos do Carrossel */
+#carouselExampleFade {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#carouselExampleFade .carousel-inner {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#carouselExampleFade .carousel-item {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#carouselExampleFade img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Ajuste mobile para os filtros não quebrarem a tela */
 @media (max-width: 768px) {
     .portfolio-filters {
@@ -57,5 +81,13 @@
     
     .filter-btn {
         font-size: 0.8rem;
+    }
+
+    #carouselExampleFade .carousel-item {
+        padding: 0;
+    }
+
+    #carouselExampleFade img {
+        width: 100% !important;
     }
 }

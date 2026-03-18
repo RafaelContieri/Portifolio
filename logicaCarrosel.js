@@ -47,8 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ride: false
             });
             
-            // Força o carrossel a exibir o primeiro slide do novo filtro
-            bsCarousel.to(0);
 
             // 4. Controle Opcional das Setas
             // Se houver apenas 1 projeto no filtro, as setas desaparecem
