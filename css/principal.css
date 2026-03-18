@@ -275,6 +275,8 @@ p, .btn-contato, .lead {
     transition: 0.3s;
 }
 
+
+
 .filter-btn.active {
     color: #fff;
     border-bottom: 2px solid #fff;
@@ -410,6 +412,7 @@ p, .btn-contato, .lead {
         margin-left: 0;
         text-align: center;
     }
+    
 
     .about-title-box {
         padding: 10px 30px;
@@ -426,7 +429,7 @@ p, .btn-contato, .lead {
 
     .img-fluid {
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .project-img {
@@ -598,6 +601,20 @@ p, .btn-contato, .lead {
         font-size: 1.8rem;
         text-decoration: none;
         box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+    
+    .social-box{
+        width: 70px;
+        height: 70px;
+    }
+    
+    .botaoNAV[aria-expanded="true"] ~ .navbar-collapse {
+        background-color: #333;
+        padding: 20px;
+    }
+
+    .botaoNAV{
+        background-color: #333;
     }
 
     .project-card img {
