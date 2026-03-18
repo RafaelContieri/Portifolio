@@ -12,14 +12,14 @@ html {
     --font-body: 'Raleway', sans-serif;
 }
 
-
-.btn-contato{
+.btn-contato {
     font-weight: 900 !important;
 }
 
-.fw-bold{
+.fw-bold {
     letter-spacing: 10px;
 }
+
 body, html {
     height: 100%;
     margin: 0;
@@ -42,11 +42,13 @@ p, .btn-contato, .lead {
 .navbar {
     padding: 2rem 0;
 }
+
 .nav-link {
     color: white !important;
     margin: 0 15px;
     font-weight: 500;
 }
+
 .btn-contato {
     background-color: white;
     color: black !important;
@@ -85,7 +87,6 @@ p, .btn-contato, .lead {
     z-index: 1;
 }
 
-
 .hero-image-container {
     overflow: hidden;
 }
@@ -96,7 +97,6 @@ p, .btn-contato, .lead {
     object-fit: cover;
     object-position: center;
 }
-
 
 /* Ícones Sociais */
 .social-icons a {
@@ -119,15 +119,12 @@ p, .btn-contato, .lead {
     background: #c0c0c0;
 }
 
-/*---------------------------------------------------------sobre mim---------------------------------------------------*/
-
-/* Seção Sobre Mim */
+/* --- Sobre Mim --- */
 .about-section {
-    background-color: var(--bg-light); /* Fundo cinza claro conforme o design */
+    background-color: var(--bg-light);
     padding: 100px 0;
 }
 
-/* Caixa do Título */
 .about-title-box {
     border: 8px solid #000;
     padding: 15px 60px;
@@ -142,20 +139,17 @@ p, .btn-contato, .lead {
     color: #000;
 }
 
-/* Texto de Introdução */
 .about-intro {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
 }
 
-/* Imagem Separadora */
 .separator-img {
     max-width: 150px;
     height: auto;
 }
 
-/* Blocos de Skill com Ícones ao Fundo */
 .skill-box {
     position: relative;
     padding: 20px;
@@ -168,7 +162,7 @@ p, .btn-contato, .lead {
     font-size: 1.8rem;
     margin-bottom: 20px;
     position: relative;
-    z-index: 2; /* Fica acima do ícone */
+    z-index: 2;
     letter-spacing: 4px;
 }
 
@@ -177,11 +171,10 @@ p, .btn-contato, .lead {
     font-size: 0.95rem;
     color: #444;
     position: relative;
-    z-index: 2; /* Fica acima do ícone */
+    z-index: 2;
     max-width: 90%;
 }
 
-/* Ícones como marca d'água ao fundo */
 .icon-bg {
     position: absolute;
     top: -10px;
@@ -190,23 +183,20 @@ p, .btn-contato, .lead {
     height: 100px;
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.1; /* Ajuste a opacidade conforme necessário */
+    opacity: 0.1;
     z-index: 1;
 }
 
-
-.g-5{
+.g-5 {
     margin-top: 160px;
     margin-bottom: 160px;
 }
 
-.mb-5{
+.mb-5 {
     margin-bottom: 75px;
 }
 
-/*----------------------------------------------------------linguagens----------------------------------------------/*
-
-/* Seção Skills */
+/* --- Skills --- */
 .skills-section {
     background-color: var(--bg-light);
     padding-bottom: 100px;
@@ -215,7 +205,7 @@ p, .btn-contato, .lead {
 .atuais-title {
     font-family: var(--font-titles);
     font-weight: 700;
-    margin-left: 10%; /* Alinhamento conforme o design */
+    margin-left: 10%;
     margin-bottom: 40px;
 }
 
@@ -229,7 +219,7 @@ p, .btn-contato, .lead {
 }
 
 .skill-img-placeholder {
-    height: 80px; /* Altura para manter o padrão visual */
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,20 +232,14 @@ p, .btn-contato, .lead {
 
 .skill-name {
     font-family: var(--font-body);
-    font-weight: 500;
+    font-weight: 800 !important;
     font-size: 0.9rem;
     letter-spacing: 1px;
     margin-top: 10px;
     color: #333;
     text-transform: uppercase;
-}
-
-.skill-name {
-    font-weight: 800 !important;
     pointer-events: none;
 }
-
-/*------------------------------------------------------------portifolio-----------------------------------------------/*
 
 /* --- Portfólio --- */
 .portfolio-header {
@@ -263,48 +247,13 @@ p, .btn-contato, .lead {
 }
 
 .portfolio-content {
-    background-color: #1a1a1a; /* Preto levemente mais claro para contraste */
+    background-color: #1a1a1a;
 }
-/* Isso é fundamental para o filtro funcionar */
+
 .project-card.hidden {
     display: none !important;
 }
 
-.carousel-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.arrow-btn {
-    position: absolute;
-    top: 40%; /* Centraliza em relação à imagem do projeto */
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    z-index: 10;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.arrow-btn:hover {
-    background: white;
-    color: black;
-}
-
-
-.arrow-btn.left { left: -80px; }
-.arrow-btn.right { right: -80px; }
-
-/* Esconde as setas em telas muito pequenas onde o touch é melhor */
-@media (max-width: 768px) {
-    .arrow-btn { display: none; }
-}
-
-/* Filtros */
 .filter-btn {
     background: none;
     border: none;
@@ -323,41 +272,18 @@ p, .btn-contato, .lead {
     border-bottom: 2px solid #fff;
 }
 
-/* Carrossel */
-.projects-carousel {
-    display: flex;
-    overflow-x: auto; /* Habilita rolagem lateral */
-    gap: 30px;
-    padding: 10px;
-    scrollbar-width: none; /* Firefox */
-}
-
-.clickHere{
+.clickHere {
     background-color: #D0CA17;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     border-radius: 10px;
     font-weight: 800;
     width: 300px;
     font-size: 15px;
 }
 
-
-
-/* Card do Projeto */
 .project-card {
-    min-width: 450px;
-    flex: 0 0 auto;
-    transition: opacity 0.4s ease, transform 0.4s ease; /* Adicionada opacidade para suavizar o filtro */
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
-
-.project-img02{
-    min-height: 450px;
-}
-
-.project-img03{
-    min-height: 450px;
-}
-
 
 .project-img {
     width: 100%;
@@ -385,7 +311,7 @@ p, .btn-contato, .lead {
     letter-spacing: 1px;
 }
 
-.project-info{
+.project-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,34 +324,23 @@ p, .btn-contato, .lead {
     font-size: 0.8rem;
     color: #aaa;
     margin-top: 10px;
-    align-items: center;
-    width: 600px;
-    
+    text-align: center;
 }
 
-/* Esconder cards filtrados */
-.project-card.hidden {
-    display: none !important;
-    opacity: 0;
-}
-
-/*--------------------------------------------------------contato e rodapé-------------------------------------/*
-
-/* --- Seção de Contato --- */
+/* --- Contato e Rodapé --- */
 .contact-section {
     background-color: var(--bg-light);
     padding-top: 80px;
 }
 
-/* Boxes sociais idênticos ao design */
 .social-box {
     width: 80px;
     height: 80px;
-    background-color: #c0c0c0; /* Cinza do box */
+    background-color: #c0c0c0;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px; /* Leve arredondamento como na foto */
+    border-radius: 8px;
     box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
@@ -440,7 +355,6 @@ p, .btn-contato, .lead {
     background-color: #fff;
 }
 
-/* Mockup do Celular */
 .contact-mockup-container {
     max-width: 600px;
 }
@@ -449,7 +363,6 @@ p, .btn-contato, .lead {
     filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.2));
 }
 
-/* --- Footer --- */
 .ls-2 {
     letter-spacing: 2px;
     font-size: 0.8rem;
@@ -483,75 +396,63 @@ p, .btn-contato, .lead {
     color: #000;
 }
 
-
-/* Ajuste para o grid no mobile */
+/* --- Responsividade Geral --- */
 @media (max-width: 768px) {
     .atuais-title {
         margin-left: 0;
         text-align: center;
     }
-}
 
-
-
-/* Ajuste Responsivo */
-@media (max-width: 768px) {
     .about-title-box {
         padding: 10px 30px;
     }
+
     .skill-box {
         text-align: center;
     }
+
     .icon-bg {
         left: 50%;
         transform: translateX(-50%);
     }
-    .img-fluid{
-        width: 400px;
+
+    .img-fluid {
+        width: 100%;
+        max-width: 400px;
     }
 
-    .project-img{
-        width: 350px;
+    .project-img {
+        width: 100%;
+        max-width: 350px;
     }
 
-    .project-desc{
-        width: 120px;
+    .project-desc {
+        width: 100%;
+        max-width: 350px;
         font-size: 15px;
     }
 
-    .project-info{
-        width: 350px;
-    
+    .project-info {
+        width: 100%;
+        max-width: 350px;
     }
-
 }
 
-/* --- MEDIA QUERY TABLET (768px até 1024px) --- PARA OS SLIDES DOS PROJETOS DO TABLET */
+/* --- Tablet --- */
 @media (min-width: 768px) and (max-width: 1024px) {
-
-    /* 1. Alarga o card para suportar a imagem maior */
-    .project-card {
-        min-width: 500px !important;
-        flex: 0 0 500px !important;
-        padding: 0 15px;
-    }
-
-    /* 2. Seleciona os cards de categoria DESIGN para aumentar a visualização */
     .project-card[data-category="design"] .project-img-container {
-        height: 550px !important; /* Altura imponente para o tablet */
+        height: 550px !important;
         border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
-    /* 3. Ajuste da imagem interna (Mockups de Design) */
     .project-img-container img {
         width: 100% !important;
         height: 100% !important;
         object-fit: cover;
-        object-position: top; /* Foca no cabeçalho do design */
+        object-position: top;
     }
 
-    /* 4. Ajuste do texto e botão no tablet */
     .project-desc {
         max-width: 480px;
         font-size: 1.1rem !important;
@@ -559,19 +460,18 @@ p, .btn-contato, .lead {
     }
 
     .clickHere {
-        width: 380px !important;
+        width: 100%;
+        max-width: 380px;
         padding: 18px !important;
         font-size: 16px !important;
     }
 }
 
-/* Garante que no Desktop as imagens voltem ao padrão se necessário */
 @media (min-width: 1025px) {
     .project-img-container {
         height: 250px;
     }
 }
-
 
 @keyframes photo-enter-animation {
     from {
@@ -591,70 +491,53 @@ p, .btn-contato, .lead {
         height: auto;
         min-height: 100vh;
     }
+
     .hero-text-container {
         padding-right: 0;
         text-align: center;
         margin-top: 100px;
     }
+
     .bg-light-gray {
         height: 100vh;
     }
-    .linguagensIcones{
+
+    .linguagensIcones {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
-
-    .project-card{
-        width: 100px;
-    }
-
-    
-    
 }
 
-
-/* --- Ajustes para Tablet (768px até 1024px) --- */
 @media (min-width: 576px) and (max-width: 991px) {
-    
-    .display-1 { font-size: 3.5rem !important; } /* Nome menor para caber */
+    .display-1 { font-size: 3.5rem !important; }
     .display-3 { font-size: 2rem !important; }
-    
-    .hero-text-container {
-        padding-right: 15px; /* Menos recuo para ganhar espaço */
-    }
+    .hero-text-container { padding-right: 15px; }
 
-    /* Reduz o tamanho dos ícones no tablet */
     .social-icons a {
         width: 60px;
         height: 60px;
         font-size: 1.8rem;
     }
 
-    /* Ajuste da Imagem para não ficar esticada */
     .hero-image {
         width: 100% !important;
-        max-width: 500px; /* Limita para não ocupar o preto todo */
+        max-width: 500px;
         height: auto;
     }
 
-    /* Ajuste do corte diagonal para a nova proporção */
     .diagonal-bg {
         left: -80px;
         width: 0px;
     }
 }
 
-
-
-/* --- MEDIA QUERY MOBILE (Até 767px) --- */
+/* --- Mobile Específico --- */
 @media (max-width: 767.98px) {
-    
     h1, h2 {
         font-size: 18px;
-    
     }
+
     .hero-section {
         height: 100vh;
         display: flex;
@@ -662,9 +545,8 @@ p, .btn-contato, .lead {
         background-color: #000;
     }
 
-    /* Ajuste da Imagem no Topo */
     .hero-image-container {
-        height: 65vh !important; /* Foto ocupa a maior parte da tela */
+        height: 65vh !important;
         padding-top: 50px;
     }
 
@@ -674,34 +556,30 @@ p, .btn-contato, .lead {
         object-fit: contain;
     }
 
-    /* Container de Informações (Base) */
     .mobile-info-bg {
-        background-color: #444; /* Cinza escuro do design */
+        background-color: #444;
         height: 35vh;
         position: relative;
-        /* Corte inclinado no topo do bloco cinza */
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-        margin-top: -5vh; /* Sobrepõe levemente a foto */
+        margin-top: -5vh;
         padding: 20px !important;
     }
 
-    /* Tipografia Mobile */
     .display-1 { font-size: 2.8rem !important; letter-spacing: 5px !important; }
     .display-3 { font-size: 2.2rem !important; letter-spacing: 5px !important; }
     .lead { font-size: 0.9rem !important; }
 
-    /* Redes Sociais Laterais (Conforme imagem) */
     .social-icons-mobile {
         position: absolute;
         right: 15px;
-        bottom: 20px; /* Alinhado ao rodapé do bloco cinza */
+        bottom: 20px;
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
 
     .social-icons-mobile a {
-        background: #ccc; /* Fundo cinza claro dos ícones */
+        background: #ccc;
         color: #000;
         width: 60px;
         height: 60px;
@@ -714,14 +592,15 @@ p, .btn-contato, .lead {
         box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
     }
 
-        .project-card img {
-            width: 350px;
-        }
-    
-        .project-info p{
-            width: 350px;
-        }
-    
-    /* Esconde os ícones originais do desktop para não duplicar */
+    .project-card img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .project-info p {
+        width: 100%;
+        max-width: 350px;
+    }
+
     .social-icons { display: none !important; }
 }

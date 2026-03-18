@@ -1,0 +1,61 @@
+/* ============================================================
+   LÓGICA VISUAL DOS FILTROS DO PORTFÓLIO
+   ============================================================ */
+
+/* Estilo base dos botões de filtro */
+.filter-btn {
+    background: none;
+    border: none;
+    color: #666;
+    font-family: var(--font-titles);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Estado quando o filtro está selecionado */
+.filter-btn.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* Efeito de Hover nos botões */
+.filter-btn:hover {
+    color: #bbb;
+}
+
+/* Lógica de ocultação dos cards (ativada via JS) */
+.project-card.hidden {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Suavização da transição ao filtrar */
+.project-card {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Container dos botões de filtro */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Ajuste mobile para os filtros não quebrarem a tela */
+@media (max-width: 768px) {
+    .portfolio-filters {
+        gap: 20px;
+        flex-wrap: wrap; /* Permite que os botões desçam caso não caibam */
+    }
+    
+    .filter-btn {
+        font-size: 0.8rem;
+    }
+}
