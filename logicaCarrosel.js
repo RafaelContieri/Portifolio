@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // 2. Lógica de Filtragem dos Itens
             carouselItems.forEach(item => {
                 const category = item.getAttribute('data-category');
-                
+
                 // Reset total: removemos classes de ativação e visibilidade
                 item.classList.remove('active', 'd-block');
                 item.classList.add('d-none');
@@ -46,16 +46,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 interval: false,
                 ride: false
             });
-            
+
 
             // 4. Controle Opcional das Setas
             // Se houver apenas 1 projeto no filtro, as setas desaparecem
             const visibleItems = document.querySelectorAll('#carouselExampleFade .carousel-item.d-block');
             const controls = document.querySelectorAll('.carousel-control-prev, .carousel-control-next');
-            
+
             controls.forEach(control => {
                 control.style.display = visibleItems.length <= 1 ? 'none' : 'flex';
             });
         });
     });
+
+    const navbarCollapse = document.getElementById('navbarNav');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    hide: true
+                });
+            }
+        });
+    });
+
 });
