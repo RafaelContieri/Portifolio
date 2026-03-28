@@ -64,6 +64,15 @@ p, .btn-contato, .lead {
     padding: 8px 25px !important;
 }
 
+.skill-title2{
+    font-family: var(--font-titles);
+    font-weight: 700 !important;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 4px !important;
+}
+
 /* Hero Section */
 .hero-section {
     height: 100vh;
@@ -1007,6 +1016,7 @@ p, .btn-contato, .lead {
         letter-spacing: 2px !important;
         padding: 0 5px;
         box-sizing: border-box;
+        font-weight: 700 !important;
     }
 
     .skill-text {
@@ -1116,7 +1126,7 @@ p, .btn-contato, .lead {
 
     .skill-title2{
         font-family: var(--font-titles);
-        font-weight: 700;
+        font-weight: 700 !important;
         font-size: 1.3rem;
         margin-bottom: 20px;
         position: relative;
