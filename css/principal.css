@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     box-sizing: border-box;
+    background-color: var(--bg-light);
 }
 
 *, *:before, *:after {
@@ -9,7 +10,7 @@ html {
 }
 
 :root {
-    --bg-light: #e0e0e0;
+    --bg-light: #eeeeee;
     --bg-dark: #000000;
     --text-dark: #1a1a1a;
     /* Variáveis das Fontes */
@@ -47,6 +48,7 @@ p, .btn-contato, .lead {
 /* Navbar */
 .navbar {
     padding: 2rem 0;
+    position: absolute !important;
 }
 
 .nav-link {
@@ -66,6 +68,7 @@ p, .btn-contato, .lead {
 .hero-section {
     height: 100vh;
     overflow: hidden;
+    background-color: var(--bg-light);
 }
 
 .bg-light-gray {
@@ -104,6 +107,105 @@ p, .btn-contato, .lead {
     width: 800px;
     object-fit: cover;
     object-position: center;
+}
+
+/* Desktop/Notebook - Ajuste visual conforme imagem fornecida */
+@media (min-width: 992px) {
+    .hero-section {
+        min-height: 100vh;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .hero-section .row {
+        min-height: 100vh;
+        height: 100vh;
+    }
+
+    .containerPrincipalPagina, .hero-text-container {
+        width: 45%;
+        min-height: 100vh;
+        height: 100vh;
+        background-color: var(--bg-light) !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0 6% 0 8%;
+        text-align: left !important;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-text-container {
+        border-right: 2px solid #e7e7e7;
+    }
+
+    .containerIMAGEMRAFA {
+        width: 55%;
+        min-height: 100vh;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-image {
+        width: auto;
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    .diagonal-bg {
+        top: 0;
+        left: -180px;
+        width: 420px;
+        height: 100%;
+        background-color: var(--bg-light);
+        transform: skewX(-16deg);
+        z-index: 1;
+    }
+
+    .hero-text-container h1,
+    .hero-text-container h2,
+    .hero-text-container .nome,
+    .hero-text-container .profissao {
+        color: #000;
+    }
+
+    .hero-text-container .profissao {
+        color: #666 !important;
+    }
+
+    .social-icons {
+        justify-content: flex-start !important;
+        gap: 0.75rem;
+    }
+
+    .social-icons a {
+        width: 70px;
+        height: 70px;
+        font-size: 2.5rem;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background: transparent;
+    }
 }
 
 /* Ícones Sociais */
@@ -394,6 +496,12 @@ p, .btn-contato, .lead {
 .back-to-top:hover i {
     transform: translateY(-5px);
 }
+.itensMENU{
+    background-color: #9191915d;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
 
 .footer-icons a {
     width: 40px;
@@ -551,8 +659,114 @@ p, .btn-contato, .lead {
         max-width: 500px;
         height: auto;
     }
-
 }
+
+/* Tablet (768px+ até 991px) ajustando para o mesmo layout da imagem */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-section {
+        height: 100vh;
+        min-height: 100vh;
+        background-color: #000; /* Fundo base preto */
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Criando a divisão diagonal no fundo da seção */
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-light);
+        /* Cria o corte diagonal: 100% largura no topo, ~40% na base */
+        clip-path: polygon(0 0, 60% 0, 30% 100%, 0% 100%);
+        z-index: 1;
+    }
+
+    .hero-section .row {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        background-color: transparent !important; /* Remove o fundo da row */
+    }
+
+    /* Container da Imagem Centralizado */
+    .containerIMAGEMRAFA {
+        width: 100% !important;
+        height: 100% !important;
+        transform: none !important; /* Remove o translateY(-800px) */
+        background-color: transparent !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .hero-image {
+        height: 90vh !important;
+        width: auto !important;
+        object-fit: contain;
+        /* Filtro leve para destacar do fundo se necessário */
+    }
+
+    /* Container de Texto sobreposto à imagem */
+    .containerPrincipalPagina, 
+    .hero-text-container {
+        position: absolute !important;
+        bottom: 15% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 100% !important;
+        height: auto !important;
+        background-color: transparent !important;
+        z-index: 10;
+        text-align: center !important;
+        align-items: center !important;
+        padding: 0 !important;
+    }
+
+    .animacaonome {
+        display: block;
+        text-align: center;
+    }
+
+    /* Ajuste das fontes para ficarem Brancas e com sombra (como na imagem) */
+    .hero-text-container h1, 
+    .hero-text-container h2,
+    .hero-text-container .nome {
+        color: #fff !important;
+        font-size: 4.5rem !important; /* Tamanho impacto */
+        margin: 0 !important;
+        line-height: 0.9;
+        letter-spacing: 5px !important;
+    }
+
+    .hero-text-container .profissao {
+        color: #ddd !important;
+        font-size: 1.2rem !important;
+        margin-top: 15px !important;
+    }
+
+    /* Esconde elementos que não estão na imagem de referência */
+    .diagonal-bg, .social-icons {
+        display: none !important;
+    }
+
+    /* Ajuste da Navbar para não atrapalhar o topo */
+    .navbar {
+        background: transparent !important;
+    }
+}
+
 
 /* --- Carousel Styles --- */
 .carousel-item {
@@ -875,8 +1089,8 @@ p, .btn-contato, .lead {
     }
     
     .social-box {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
     
     .botaoNAV[aria-expanded="true"] ~ .navbar-collapse {
@@ -893,6 +1107,11 @@ p, .btn-contato, .lead {
 
     .itensMENU{
         gap: 10px !important;
+        
+    }
+
+    .menuitem{
+        background-color: #444;
     }
 
     .skill-title2{
@@ -923,6 +1142,7 @@ p, .btn-contato, .lead {
         height: auto;
     }
 
+    .containerPrincipalPagina,
     .containerprincipalPagina {
         margin-top: 150px;
         box-sizing: border-box;
