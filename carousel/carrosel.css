@@ -72,6 +72,8 @@
     display: block;
 }
 
+
+
 /* Ajuste mobile para os filtros não quebrarem a tela */
 @media (max-width: 768px) {
     .portfolio-filters {

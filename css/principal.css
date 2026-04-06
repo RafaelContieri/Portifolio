@@ -18,8 +18,28 @@ html {
     --font-body: 'Raleway', sans-serif;
 }
 
+.textoCarrosel { /*ajustar media query*/
+    color: #fff;
+}
+
+.tituloCarrosel{ /*ajustar media query*/
+    color: #fff;
+}
+
+.descricaoCarrosel { /*ajustar media query*/
+    width: 800px;
+}
+
+#carouselExampleFade .carousel-item{ /*ajustar media query*/
+    height: 700px;
+}
+
 .btn-contato {
     font-weight: 900 !important;
+}
+
+#carouselExampleFade img{
+    width: 500px !important;
 }
 
 .fw-bold {
@@ -1219,6 +1239,8 @@ p, .btn-contato, .lead {
     }
 
 }
+
+
 
 
   

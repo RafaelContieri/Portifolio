@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./css/principal.css">
     <link rel="stylesheet" href="./css/carrosel.css">
+    <link rel="stylesheet" href="./carousel/carrosel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -41,7 +42,7 @@
             <div class="row g-0 h-100">
 
                 <div class="containerPrincipalPagina hero-text-container text-center text-sm-end bg-light-gray">
-                    
+
                     <div class="animacaonome">
                         <h1 class="nome display-1 fw-bold mb-0">RAFAEL</h1>
                         <div style="margin-left: 50px;">
@@ -230,21 +231,38 @@
             <button class="filter-btn" data-filter="codados">CONCLUÍDOS</button>
             <button class="filter-btn" data-filter="design">APENAS DESIGN</button>
         </div>
-
-
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
-                <div class="carousel-item active d-flex justify-content-center" data-category="codados">
-                    <img src="./assets/imagens_projeto/image 13.png" class="d-block w-50" alt="...">
+                <div class="carousel-item active d-flex flex-column align-items-center text-center"
+                    data-category="codados">
+                    <img src="./assets/imagens_projeto/image 13.png" class="d-block img-fluid" alt="Farma Nova Era">
+                    <div class="descricaoCarrosel mt-3">
+                        <h3 class="tituloCarrosel">SISTEMA DE SENHAS PARA CLÍNICA MÉDICA</h3>
+                        <p class="textoCarrosel">Projeto de desenvolvimento de um sistema de senhas para clínica
+                            médica, focado em otimização de processos da clínica e para um melhor atendimento aos pacientes.</p>
+                    </div>
                 </div>
-                <div class="carousel-item d-flex justify-content-center" data-category="design">
-                    <a href="./novaera.html"><img src="./assets/imagens_projeto/frameviewNOVAER.png" class="d-block w-50" alt="..."></a>
+
+                <div class="carousel-item d-flex flex-column align-items-center text-center" data-category="design">
+                    <a href="./novaera.html" class="d-block">
+                        <img src="./assets/imagens_projeto/frameviewNOVAER.png" class="img-fluid" alt="Farma Nova Era">
+                    </a>
+                    <div class="descricaoCarrosel mt-3">
+                        <h3 class="tituloCarrosel">FARMA NOVA ERA</h3>
+                        <p class="textoCarrosel">Um projeto de landing page para a farmácia fictícia Nova Era</p>
+                    </div>
                 </div>
-                <div class="carousel-item d-flex justify-content-center" data-category="design">
-                    <a href="./despachante.html"><img src="./assets/imagens_projeto/frameview.png" class="d-block w-50" alt="..."></a>
+
+                <div class="carousel-item d-flex flex-column align-items-center text-center" data-category="design">
+                    <a href="./despachante.html" class="d-block">
+                        <img src="./assets/imagens_projeto/frameview.png" class="img-fluid" alt="Projeto Despachante">
+                    </a>
+                    <div class="descricaoCarrosel mt-3">
+                        <h3 class="tituloCarrosel">DESPACHANTE AUTOMOTIVO</h3>
+                        <p class="textoCarrosel">Um projeto de landing page para o despachante automotivo fictício</p>
+                    </div>
                 </div>
             </div>
-
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

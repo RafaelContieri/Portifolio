@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +9,106 @@
 </head>
 <style>
     .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;       /* Garante que o container ocupe a largura total */
-    padding: 0 15px;   /* Adiciona um respiro nas laterais em telas mobile */
-    box-sizing: border-box;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* Garante que o container ocupe a largura total */
+        padding: 0 15px;
+        /* Adiciona um respiro nas laterais em telas mobile */
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
 
-.ld_01 {
-    max-width: 1200px; /* Define o tamanho máximo que ela pode chegar (Desktop) */
-    width: 100%;       /* Faz ela ocupar 100% da largura disponível em telas menores */
-    height: auto;      /* Mantém a proporção da imagem para não achatar */
-    display: block;
-}
+    .ld_01 {
+        max-width: 1200px;
+        /* Define o tamanho máximo que ela pode chegar (Desktop) */
+        width: 100%;
+        /* Faz ela ocupar 100% da largura disponível em telas menores */
+        height: auto;
+        /* Mantém a proporção da imagem para não achatar */
+        display: block;
+    }
 
-.voltarbtn{
-    background-color: #D0CA17;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    color: black;
-    font-weight: 600;
-}
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
+    /* --- CÓDIGO ORIGINAL (DESKTOP) --- */
+    .btn-brutalista {
+        background-color: #F1F1F1;
+        color: #000000;
+        border: 4px solid #000000;
+        padding: 15px 40px;
+        font-family: 'Arial Black', sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        box-shadow: 8px 8px 0px #000000;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.15s ease;
+        display: inline-block;
+        outline: none;
+    }
+
+    .btn-brutalista:active {
+        box-shadow: 0px 0px 0px #000000;
+        transform: translate(8px, 8px);
+        /* Move a distância total da sombra */
+    }
+
+    /* --- MEDIA QUERIES --- */
+
+    /* Tablet (Telas até 768px) */
+    @media (max-width: 768px) {
+        .btn-brutalista {
+            font-size: 18px;
+            /* Diminui a fonte */
+            padding: 12px 30px;
+            /* Reduz o respiro interno */
+            letter-spacing: 6px;
+            /* Reduz o espaçamento entre letras */
+            box-shadow: 6px 6px 0px #000000;
+            /* Sombra um pouco menor */
+            border-width: 3px;
+            /* Borda levemente mais fina */
+        }
+
+        .btn-brutalista:active {
+            transform: translate(6px, 6px);
+            /* Ajustado para a nova sombra */
+        }
+    }
+
+    /* Celular (Telas até 480px) */
+    @media (max-width: 480px) {
+        .btn-brutalista {
+            font-size: 14px;
+            /* Fonte menor para telas estreitas */
+            padding: 10px 20px;
+            /* Padding compacto */
+            letter-spacing: 4px;
+            /* Menos espaçamento para não quebrar linha */
+            box-shadow: 4px 4px 0px #000000;
+            /* Sombra delicada, mas ainda bruta */
+            border-width: 3px;
+        }
+
+        .btn-brutalista:active {
+            transform: translate(4px, 4px);
+            /* Ajustado para a nova sombra */
+        }
+    }
 </style>
+
 <body>
 
-    <div class="btn"><button onclick="window.location.href='./index.html';" class="voltarbtn" >VOLTAR</button></div>
-    
+    <div class="container"><button class="btn-brutalista" onclick="window.location.href='./index.html';">Voltar</button>
+    </div>
+
     <div class="container">
-    <img class="ld_01" src="./assets/imagens_projeto/farmaNovaera.png" alt="Descrição do Projeto">
-</div>
-    
-   
+        <img class="ld_01" src="./assets/imagens_projeto/farmaNovaera.png" alt="Descrição do Projeto">
+    </div>
+
+
 </body>
+
 </html>
