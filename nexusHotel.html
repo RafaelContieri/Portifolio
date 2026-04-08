@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* Garante que o container ocupe a largura total */
+        padding: 0 15px;
+        /* Adiciona um respiro nas laterais em telas mobile */
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+
+    .ld_01 {
+        max-width: 1200px;
+        /* Define o tamanho máximo que ela pode chegar (Desktop) */
+        width: 100%;
+        /* Faz ela ocupar 100% da largura disponível em telas menores */
+        height: auto;
+        /* Mantém a proporção da imagem para não achatar */
+        display: block;
+    }
+
+    .btn-brutalista {
+        /* Fundo e Texto */
+        background-color: #F1F1F1;
+        color: #000000;
+
+        /* Borda e Estrutura */
+        border: 4px solid #000000;
+        padding: 15px 40px;
+
+        /* Tipografia baseada na imagem */
+        font-family: 'Arial Black', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+
+        /* O efeito Brutalista (Sombra sólida) */
+        box-shadow: 8px 8px 0px #000000;
+
+        /* Configurações de interação */
+        cursor: pointer;
+        position: relative;
+        transition: all 0.15s ease;
+        display: inline-block;
+        outline: none;
+    }
+
+    /* Efeito de Clique: O botão 'desce' para cobrir a sombra */
+    .btn-brutalista:active {
+        box-shadow: 0px 0px 0px #000000;
+        transform: translate(4px, 4px);
+    }
+</style>
+
+<body>
+
+    <div class="container"><button class="btn-brutalista" onclick="window.location.href='./index.html';">Voltar</button></div>
+
+    <div class="container">
+        <img class="ld_01" src="./assets/imagens_projeto/landingpageHotel.png" alt="Descrição do Projeto">
+    </div>
+
+
+</body>
+
+</html>
