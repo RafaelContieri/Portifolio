@@ -17,7 +17,7 @@ html {
     --text-dark: #1a1a1a;
     /* Variáveis das Fontes */
     --font-titles: 'Radio Canada Big', sans-serif;
-    --font-body: 'Raleway', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
 }
 
 .textoCarrosel {
@@ -90,10 +90,20 @@ p,
 }
 
 .btn-contato {
-    background-color: white;
+    background-color: #C7B100;
     color: black !important;
     border-radius: 50px;
     padding: 8px 25px !important;
+}
+.spanMim{
+    color: #ffffff !important;
+}
+.tituloPrincipal{
+    font-size: 60px;
+}
+
+.spanCONTATOTITLE{
+    color: #C7B100;
 }
 
 .skill-title2 {
@@ -148,6 +158,41 @@ p,
     width: 800px;
     object-fit: cover;
     object-position: center;
+}
+
+.containerIMAGES{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.containerIMAGES img{
+    width: 800px;
+}
+
+.spanNome{
+    color: #C7B100;
+}
+
+.tituloCONTATO{
+    margin-bottom: 15rem;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.tituloCONTATOg h2{
+    font-family: var(--font-body);
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.tituloCONTATO h2{
+    font-weight: 700;
+    font-family: var(--font-body);
 }
 
 /* Desktop/Notebook - Ajuste visual conforme imagem fornecida */
@@ -620,6 +665,10 @@ p,
         border-radius: 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
+    
+    .containerIMAGES img{
+        width: 600px;
+    }
 
     .project-img-container img {
         width: 100% !important;
@@ -893,6 +942,10 @@ p,
         box-sizing: border-box;
     }
 
+    .containerIMAGES img{
+        width: 350px;
+    }
+
     html,
     body {
         overflow-x: hidden;
@@ -1094,8 +1147,6 @@ p,
 
     .col-auto,
     .col-md-6 {
-        padding-left: 0;
-        padding-right: 0;
         box-sizing: border-box;
     }
 
@@ -1293,4 +1344,29 @@ p,
         }
     }
 
+}
+
+/* --- Estilos Base (Desktop) --- */
+.tituloCONTATO {
+    margin-bottom: 5rem; /* Reduzi de 15rem para 5rem para um respiro mais elegante */
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #000;
+    text-transform: uppercase; /* Opcional, comum para esse estilo de letter-spacing */
+}
+
+.tituloCONTATO h2 {
+    font-weight: 700;
+    font-family: var(--font-body);
+    line-height: 1.2;
+}
+
+.tituloCONTATOg h2 {
+    font-family: var(--font-body);
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #000;
+    line-height: 1.1;
+    margin-top: 2rem;
 }

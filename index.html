@@ -15,7 +15,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/cards.css">
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,
+14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..9
+00&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1
+,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <body>
 
@@ -28,7 +35,8 @@
             <div class="menuitem collapse navbar-collapse" id="navbarNav">
                 <ul class="itensMENU navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre <span class="spanMim">Mim</span></a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Projetos</a></li>
                     <li class="nav-itemCTT"><a class="nav-link btn-contato" href="#contato">Contato</a></li>
@@ -46,7 +54,7 @@
                     <div class="animacaonome">
                         <h1 class="nome display-1 fw-bold mb-0">RAFAEL</h1>
                         <div style="margin-left: 50px;">
-                            <h2 class="nome display-3 fw-bold mb-3">CONTIERI</h2>
+                            <h2 class="nome display-3 fw-bold mb-3"><span class="spanNome">CONTIERI</span></h2>
                         </div>
                         <p class="profissao lead text-secondary mb-4">Desenvolvedor FrontEnd / UI Designer</p>
                     </div>
@@ -235,17 +243,20 @@
             <div class="carousel-inner">
                 <div class="carousel-item active d-flex flex-column align-items-center text-center"
                     data-category="codados">
-                    <img src="./assets/imagens_projeto/image 13.png" class="fotoProjeto d-block img-fluid" alt="Farma Nova Era">
+                    <img src="./assets/imagens_projeto/image 13.png" class="fotoProjeto d-block img-fluid"
+                        alt="Farma Nova Era">
                     <div class="descricaoCarrosel mt-3">
                         <h3 class="tituloCarrosel">SISTEMA DE SENHAS PARA CLÍNICA MÉDICA</h3>
                         <p class="textoCarrosel">Projeto de desenvolvimento de um sistema de senhas para clínica
-                            médica, focado em otimização de processos da clínica e para um melhor atendimento aos pacientes.</p>
+                            médica, focado em otimização de processos da clínica e para um melhor atendimento aos
+                            pacientes.</p>
                     </div>
                 </div>
 
                 <div class="carousel-item d-flex flex-column align-items-center text-center" data-category="design">
                     <a href="./novaera.html" class="d-block">
-                        <img src="./assets/imagens_projeto/frameviewNOVAER.png" class="fotoProjeto img-fluid" alt="Farma Nova Era">
+                        <img src="./assets/imagens_projeto/frameviewNOVAER.png" class="fotoProjeto img-fluid"
+                            alt="Farma Nova Era">
                     </a>
                     <div class="descricaoCarrosel mt-3">
                         <h3 class="tituloCarrosel">FARMA NOVA ERA</h3>
@@ -255,7 +266,8 @@
 
                 <div class="carousel-item d-flex flex-column align-items-center text-center" data-category="design">
                     <a href="./despachante.html" class="d-block">
-                        <img src="./assets/imagens_projeto/frameview.png" class="fotoProjeto img-fluid" alt="Projeto Despachante">
+                        <img src="./assets/imagens_projeto/frameview.png" class="fotoProjeto img-fluid"
+                            alt="Projeto Despachante">
                     </a>
                     <div class="descricaoCarrosel mt-3">
                         <h3 class="tituloCarrosel">DESPACHANTE AUTOMOTIVO</h3>
@@ -265,7 +277,8 @@
 
                 <div class="carousel-item d-flex flex-column align-items-center text-center" data-category="design">
                     <a href="./nexusHotel.html" class="d-block">
-                        <img src="./assets/imagens_projeto/previaHotel.png" class="fotoProjeto img-fluid" alt="Projeto Despachante">
+                        <img src="./assets/imagens_projeto/previaHotel.png" class="fotoProjeto img-fluid"
+                            alt="Projeto Despachante">
                     </a>
                     <div class="descricaoCarrosel mt-3">
                         <h3 class="tituloCarrosel">NEXUS HOTEL</h3>
@@ -275,7 +288,8 @@
 
                 <div class="carousel-item d-flex flex-column align-items-center text-center" data-category="design">
                     <a href="./barbeariaBarber.html" class="d-block">
-                        <img src="./assets/imagens_projeto/barbeariaCAPA.png" class="fotoProjeto img-fluid" alt="Projeto Despachante">
+                        <img src="./assets/imagens_projeto/barbeariaCAPA.png" class="fotoProjeto img-fluid"
+                            alt="Projeto Despachante">
                     </a>
                     <div class="descricaoCarrosel mt-3">
                         <h3 class="tituloCarrosel">Barbearia Barber</h3>
@@ -301,13 +315,94 @@
     <section id="contato" class="contact-section py-5">
         <div class="container text-center">
             <div class="row justify-content-center mb-5">
-                <div class="col-auto">
-                    <div class="about-title-box">
-                        <h2 class="m-0">CONTATO</h2>
+                <div class="containerCONTATO col-auto">
+                    <div class="tituloCONTATO">
+                        <h2 class="tituloPrincipal">Procura uma solução personalizada para o seu <span
+                                class="spanCONTATOTITLE">negócio?</span></h2>
+                    </div>
+                    <div class="tituloCONTATO">
+                        <div class="containerIMAGES">
+                            <img src="./assets/imagens_projeto/capaBARBEARIA.png" alt="" class="imagensCAPA">
+                            <img src="./assets/imagens_projeto/capaHOTEL.png" alt="" class="imagensCAPA">
+                        </div>
+                    </div>
+
+                    <div class="containerCards">
+                        <div class="card-diferencial">
+                            <div class="card-content-wrapper">
+                                <div class="card-icon-container">
+                                    <img src="./assets/icons/time.png" alt="Ícone Rapidez" class="card-icon-img">
+                                </div>
+                                <div class="card-text-body">
+                                    <div class="card-title-box">
+                                        <h4 class="card-title">Rapidez ao abrir sua página</h4>
+                                    </div>
+                                    <p class="card-description">
+                                        Ninguém gosta de esperar. Sua página abre instantaneamente, evitando que o cliente desista antes mesmo de ver sua oferta.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-decorator"></div>
+                        </div>
+                        <div class="card-diferencial">
+                            <div class="card-content-wrapper">
+                                <div class="card-icon-container">
+                                    <img src="./assets/icons/resize.png" alt="Ícone Redimensionamento" class="card-icon-img">
+                                </div>
+                                <div class="card-text-body">
+                                    <div class="card-title-box">
+                                        <h4 class="card-title">Layouts responsíveis </h4>
+                                    </div>
+                                    <p class="card-description">
+                                        Soluções desenvolvidas totalmente responsivas. Sua landing page
+                                         terá uma navegação impecável em celulares e tablets,
+                                          garantindo autoridade para sua marca em qualquer tela. </p>
+                                </div>
+                            </div>
+                            <div class="card-decorator"></div>
+                        </div>
+                        <div class="card-diferencial">
+                            <div class="card-content-wrapper">
+                                <div class="card-icon-container">
+                                    <img src="./assets/icons/money.png" alt="Ícone Dinheiro" class="card-icon-img">
+                                </div>
+                                <div class="card-text-body">
+                                    <div class="card-title-box">
+                                        <h4 class="card-title">Transforme visitantes em faturamento</h4>
+                                    </div>
+                                    <p class="card-description">
+                                        Ter acessos e não vender é frustrante. Desenvolvo páginas com design estratégico e CTAs persuasivos,
+                                         focados em guiar o usuário pelo caminho da compra e aumentar a taxa de conversão do seu negócio.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-decorator"></div>
+                        </div>
+                        <div class="card-diferencial">
+                            <div class="card-content-wrapper">
+                                <div class="card-icon-container">
+                                    <img src="/assets/icons/idea.png" alt="Ícone Rapidez" class="card-icon-img">
+                                </div>
+                                <div class="card-text-body">
+                                    <div class="card-title-box">
+                                        <h4 class="card-title">Design feito sob medida</h4>
+                                    </div>
+                                    <p class="card-description">
+                                        Diferente de soluções comuns que tentam encaixar
+                                         seu negócio em um modelo pronto, eu utilizo 
+                                         a ferramenta Figma para criar um protótipo exclusivo da sua página.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-decorator"></div>
+                        </div>
+                        </div>
+                    
+                    <div class="tituloCONTATOg">
+                        <h2>Entre em contato comigo através dos meios de comunicação abaixo</h2>
                     </div>
                 </div>
             </div>
-
             <div class="row justify-content-center gap-4 mb-5">
                 <div class="social-box">
                     <a href="https://www.instagram.com/contierii__/"><i class="fab fa-instagram"></i></a>
