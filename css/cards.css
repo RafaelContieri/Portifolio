@@ -88,8 +88,9 @@
 
 .card-title {
     color: white;
-    font-size: 1.2rem;
-    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-family: (--font-titles);
+    letter-spacing: 1px;
     font-weight: 700;
     margin: 0;
 }
@@ -98,7 +99,7 @@
 .card-description {
     color: white;
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: (--font-body);
     font-weight: 500;
     line-height: 1.5;
     margin: 0;
@@ -171,6 +172,10 @@
         width: 350px;
         
     }
+    
+    .tituloCONTATOg h2{
+        font-size: 25px;
+    }
 
     .containerIMAGES{
         display: flex;
@@ -180,7 +185,7 @@
     }
 
     .tituloPrincipal{
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .card-diferencial {
